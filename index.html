@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ 
+    <title>IOS TImer</title>
+    <style>
+    body{
+        background-color: #25282A;
+        text-align: center;     
+        font-size: 8vh;
+    }
+
+    .app{
+    }
+    
+    #time{
+        color: #E4E4E2;
+
+    }
+
+    .start{
+        background-color: #BA0C2E;
+        color: #E4E4E2;
+  
+        
+    }
+
+    .UI{
+        
+    }
+
+    button{
+        border-radius: 50%;
+        height: 15vh;
+        width: 15vh;
+        font-size: 30px;
+        cursor: pointer;
+        opacity: .8;
+    }
+    button:hover{
+        opacity: 1;
+    }
+
+    .pause{
+        background-color: #1eff5b;
+    
+    }
+
+    .cancel{
+        background-color: silver;
+    }
+
+    select{
+        background-color: #25282A;
+        border-radius: 5px;
+        color: #E4E4E2;
+        width: 30vh;
+        height: 10vh;
+        font-size: 30px;
+        padding: 20px;
+    }
+
+    .countdown{
+        color: #E4E4E2;
+    }
+    
+    </style>
+</head>
+<body>
+
+    <div class="app">
+        <div id="time"></div>
+        <button class="start" onclick="start()">Start</button>
+        <div class="UI">
+            <canvas id="myCanvas" width="500" height="500";></canvas>
+            <div class="countdown">30</div>
+        </div>
+        <div>
+            <button class="cancel">Cancel</button>
+                <select id="selectedTime">
+                    <option value="30">30 Seconds</option>
+                    <option value="60">1 Minutes</option>
+                    <option value="300">5 Minute</option>
+                    <option value="1800">30 Minute</option>
+                </select>
+            <button class="pause">Pause</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
